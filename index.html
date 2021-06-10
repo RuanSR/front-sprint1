@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
     <script>
       document.write(
         '<script src="http://' +
@@ -18,50 +19,59 @@
     </script>
   </head>
   <body>
-    <header>
-      <h1>
-        <img src="assets/riachuelo.svg" alt="" />
+    <header class="container">
+      <h1 class="header__logo">
+        <img src="assets/riachuelo.svg" class="header__logo-full" alt="logo riachuelo" />
+        <img src="assets/rchlo.svg" class="header__logo-small" alt="logo riachuelo" />
       </h1>
-      <input type="search" placeholder="O quê você está procurando" />
-      <nav>
-        <ul>
-          <li><a href="">Novidades</a></li>
-          <li><a href="">Feminimo</a></li>
-          <li><a href="">Masculino</a></li>
-          <li><a href="">Infantil</a></li>
-          <li><a href="">Moda Íntima</a></li>
-          <li><a href="">Calçados</a></li>
-          <li><a href="">Acessórios e Relógios</a></li>
-          <li><a href="">Beleza e Perfume</a></li>
-          <li><a href="">Casa Riachuelo</a></li>
-          <li><a href="">Eletrônicos</a></li>
-          <li><a href="">Personagens</a></li>
-          <li><a href="">Outlet</a></li>
+      <div class="header__menu">
+        <span alt="menu logo" class="header__menu-img" onclick="myFunction(this)"></span>
+        <span alt="menu" class="header__menu-txt">menu</span>
+        <!-- <span class="header__menu-txt">menu</span> -->
+      </div>
+      <div class="header__search___box">
+        <!-- <img src="assets/search.svg" alt="lupa de pesquisa" class="header__search-img"> -->
+        <input class="header__search___box-input input-field" type="search" placeholder="O quê você está procurando" />
+      </div>
+      <nav class="header__links">
+        <ul class="header__links-list">
+          <li><a href="" class="header__links-item">Novidades</a></li>
+          <li><a href="" class="header__links-item">Feminimo</a></li>
+          <li><a href="" class="header__links-item">Masculino</a></li>
+          <li><a href="" class="header__links-item">Infantil</a></li>
+          <li><a href="" class="header__links-item">Moda Íntima</a></li>
+          <li><a href="" class="header__links-item">Calçados</a></li>
+          <li><a href="" class="header__links-item">Acessórios e Relógios</a></li>
+          <li><a href="" class="header__links-item">Beleza e Perfume</a></li>
+          <li><a href="" class="header__links-item">Casa Riachuelo</a></li>
+          <li><a href="" class="header__links-item">Eletrônicos</a></li>
+          <li><a href="" class="header__links-item">Personagens</a></li>
+          <li><a href="" class="header__links-item">Outlet</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="breadcrumbs">
         <nav>
-          <ol>
-            <li><a href="">Home</a></li>
-            <li><a href="">Infantil</a></li>
-            <li><a href="">Personagens</a></li>
-            <li>Mario Bros</li>
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item"><a href="" class="breadcrumbs__list-item-link">Home</a></li>
+            <li class="breadcrumbs__list-item"><a href="" class="breadcrumbs__list-item-link">Infantil</a></li>
+            <li class="breadcrumbs__list-item"><a href="" class="breadcrumbs__list-item-link">Personagens</a></li>
+            <li class="breadcrumbs__list-item"><a href="" class="breadcrumbs__list-item-link">Mario Bros</a></li>
           </ol>
         </nav>
       </section>
-      <section class="filters">
-        <ul>
-          <li>Tamanho</li>
-          <li>Cor</li>
-          <li>Departamento</li>
-          <li>Categoria</li>
-          <li>Manga</li>
+      <section class="container filters">
+        <ul class="filters__list">
+          <li class="filters__list-item">Tamanho</li>
+          <li class="filters__list-item">Cor</li>
+          <li class="filters__list-item">Departamento</li>
+          <li class="filters__list-item">Categoria</li>
+          <li class="filters__list-item">Manga</li>
         </ul>
       </section>
 
-      <section class="products">
+      <!-- <section class="products">
         <ol>
           <li>
             <div>
@@ -172,9 +182,9 @@
             </div>
           </li>
         </ol>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <div class="offers">
         <p>Receba ofertas e novidades por e-mail</p>
         <form action="/">
@@ -330,6 +340,7 @@
       <div class="complaints">
         <img src="assets/ra1000.webp" alt="" />
       </div>
-    </footer>
+    </footer> -->
+    <script src="js/index.js"></script>
   </body>
 </html>
